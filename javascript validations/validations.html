@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body bgcolor="grey">
+<script type="text/javascript">
+  function w() {
+    console.log("hello");
+    var pass1=document.form1.pass1.value
+    var pass2=document.form1.pass2.value
+    if(pass1.indexOf('@')==-1)
+    {
+      alert("password must contain @ symbol")
+      return false
+    }
+    else {
+      if(pass1.length>3 && pass1.length<6)
+      {
+    if(pass1==pass2)
+    {
+      return true
+    }
+    else{
+      alert("passwords not matching")
+      return false
+    }
+  }
+    else {
+      alert("password length must be >3 and <6")
+      return false
+    }
+  }
+}
+</script>
+    <form  name="form1" onsubmit="return w()" method="post" action="thanku.html">
+      name: <input type="text"  value="" name="name1" required pattern="[a-zA-Z ]{3,4}" title="pls enter only alphabets and enter min 3 and max 4 alphabets"><br>
+      password:
+      <input type="password" name="pass1" value="" required><br>
+      reenterpassword:<input type="password" name="pass2" value="" required ><br>
+    <input type="submit" name="" value="click"  >
+    </form>
+  </body>
+</html>

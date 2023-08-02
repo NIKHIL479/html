@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1::first-letter{
+            font-size: 60px;
+        }
+        .p1::first-line{
+            color: blue;
+        }
+        .h::before{
+            content: "before content";
+            color: yellow;
+        }
+        .h::after{
+            content: "after content";
+            color: pink;
+        }
+        p::selection{
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        h1 tag 1
+    </h1>
+    <h1 class="h">h2 tag2</h1>
+    
+    <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Eveniet laudantium distinctio possimus voluptates, nam velit est impedit. Laboriosam fugiat harum laborum, labore, vel debitis odit asperiores dignissimos dolorum doloribus placeat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse repellat ipsa tempora cupiditate consequatur quo animi doloremque enim? Ducimus unde eaque libero ab porro laboriosam optio facilis harum eius atque.</p>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+<h1>welcome</h1>
+<input type="text" id="i" value="">
+<script type="text/javascript">
+
+function w()
+{
+  var t=document.getElementById('p')
+  var x=document.getElementById('i').value
+  try {
+if(x<5)
+{
+  throw "less than 5"
+}
+else if (x>10) {
+  throw "gt 10"
+
+}
+else if (isNaN(x)) {
+  throw "pls enter a number"
+
+}
+else if (x=="") {
+  throw "empty"
+
+}
+
+else {
+  t.innerHTML="x"
+
+}
+}
+catch(err)
+{
+  var t=document.getElementById('p')
+  t.innerHTML="input is "+err
+
+}
+
+
+}
+
+
+
+</script>
+<button type="button" name="button" onclick="w()">click</button>
+<p id="p"></p>
+  </body>
+</html>

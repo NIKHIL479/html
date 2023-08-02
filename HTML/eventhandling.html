@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>welcome</h1>
+  <input type="text" class="t">
+  <button class="b" onclick="b.style.backgroundColor='yellow'">click here</button> 
+  <script>
+   var h1=document.getElementsByTagName('h1')[0]
+   var input=document.getElementsByTagName("input")[0]
+   var b=document.getElementsByTagName("button")[0]
+   h1.onmouseover=()=>h1.style.border='10px solid green';
+   h1.onmouseout=mouseout
+   function mouseout(event)
+   {
+    console.log(event);
+    h1.style.border='10px solid grey'
+   }
+   input.addEventListener("focus",()=>input.style.backgroundColor='pink')
+
+   
+
+
+
+  </script>
+  
+</body>
+</html>

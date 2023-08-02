@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+    }
+    body{
+      display: flex;
+      justify-content: center;
+     
+    }
+    .con{
+      border: 2px solid grey;
+    }
+  .r{
+   position: relative;
+   left: 60px;
+   padding: 10px;
+   text-align: center;
+  }
+    button{
+      padding: 5px;;
+      margin: 5px;
+    }
+
+
+  </style>
+</head>
+<body>
+  <button class="clear" onclick="document.getElementById('i').value=''"> clear</button>
+  <br>
+  <div class="div0">
+    <input type="text" id="i">
+    <div id="div1">
+    <button class="b" >1</button>
+    <button class="b" >2</button>
+    <button class="b" >3</button>
+    <button class="b" >4</button>
+    <button class="b" >5</button>
+</div>
+<div id="div2">
+    <button class="b" >6</button>
+    <button class="b" >7</button>
+    <button class="b" >8</button>
+    <button class="b" >9</button>
+    <button class="b" >0</button>
+</div>
+<div id="div3">
+    <button class="b" >+</button>
+    <button class="b" >-</button>
+    <button class="b" >*</button>
+    <button class="b" >/</button>
+    <button class="b" >%</button>
+    <br>
+</div class="div4">
+<button class="r">result</button>
+</div>
+</div>
+<script>
+var input=document.getElementById('i')
+var b=document.getElementsByClassName('b')
+var re=document.getElementsByClassName('r')[0]
+re.onclick=()=>{input.value=eval(input.value)}
+
+function show(t)
+{
+    input.value+=t
+}
+for(var i=0;i<b.length;i++)
+{
+  b[i].onclick=(e)=>{   
+    show(e.target.innerText) 
+}
+}
+
+</script>
+
+</body>
+</html>

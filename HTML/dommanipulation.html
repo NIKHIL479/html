@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .bor{
+        border: 12px solid green;
+    }
+  </style>
+</head>
+<body>
+  <div id="one">
+    <h1>welcome</h1>
+  </div>
+<p>NIKHIL</p>
+  <div id="parent1">
+    <p id="first"> this is first paragraph</p>
+    <p id="second">this is second paragraph</p>
+    <p id="third">this is third paragraph</p>
+    <p class="fourth">this is fourth paragraph</p>
+  </div>
+  <br>
+  <img src="guido.jpg" alt="" height="100px" width="100px" class="">
+  <script>
+    var h1=document.querySelector('h1')
+    h1.textContent="CONTENT CHANGED"
+    var p1=document.createElement('p')
+    p1.innerText="a new paragraph inserted here";
+    var one=document.getElementById("one")
+    one.appendChild(p1)
+    var parent=document.getElementById("parent1")
+    var fir=document.getElementById("first")
+    var p2=document.createElement('p2')
+    p2.innerText="a new paragraph inserted before first para"
+    parent.insertBefore(p2,fir)
+    var sec=document.getElementById("second")
+    sec.remove()
+    var p3=document.getElementById("third")
+    p3.textContent="hello"
+  
+    var img=document.getElementsByTagName('img')[0]
+    console.log(img.getAttribute("src"));
+    img.setAttribute("src","billgates.jpg")
+    img.setAttribute("class","bor")
+  </script>
+  
+</body>
+</html>

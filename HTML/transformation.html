@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div{
+      margin-bottom: 15px;
+      width: 150px;
+      height: 150px;
+      background-color: greenyellow;
+    }
+    .div1:hover{
+      transform: translate(10px,10px);
+      /* used to move element on x and y axis 1st 10px is x axis next 10px is y axis*/
+    }
+    .div2:hover{
+      transform: scale(2,3);
+      /*scale is used to increase width and height of element 2 is 2 times the current width 3is 3 times height  scale(1.1 means both
+      height aand width will increase)*/
+    }
+    .div3:hover{
+      transform: rotate(-20deg);
+      /*to rotate element -ve means rotating left side +ve right side*/
+    }
+    .div4:hover{
+      transform: skew(40deg,40deg);
+      /*skew is used to change its shape */
+    }
+  </style>
+</head>
+<body>
+  <div class="div1">div1</div>
+  <div class="div2">div2</div>
+  <div class="div3">div3</div>
+  <div class="div4">div4</div>
+  
+</body>
+</html>

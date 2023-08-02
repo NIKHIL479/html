@@ -1,0 +1,18 @@
+h1{
+  border: 10px blue solid;
+  text-align: center;
+  width: 25%;
+  padding-left: 100px;
+  padding-right: 200px;
+  margin-bottom: 80px;
+  margin-top: 100px;
+}
+h2{
+  border: 10px blue solid;
+  text-align: center;
+  width: 25%;
+  padding-top: 50px;
+  padding-left: 100px;
+  padding-right: 200px;
+
+}

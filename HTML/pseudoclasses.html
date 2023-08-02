@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1:hover{
+            background-color: blue;
+        }
+        .a1:link{
+            background-color: red;
+        }
+        .a2:visited{
+          color: yellow;
+        }
+        .a3:active{
+            color: red;
+        }
+        p:target{
+            background-color: yellow; /* when we navigate to paragraph with a tag then that para is target*/
+        }
+        input:focus{
+            background-color: pink;
+            border: 1px solid green;
+        }
+        input:required{
+            border: 2px solid red;
+        }
+        h2:not(.fir){
+            background-color: red;;/*except fir class tag remaining this style is applicable */
+        }
+        p:first-child{
+            background-color: red;/* if para is first child*/
+        }
+        p:last-child{
+            background-color: grey;
+        }
+        p:nth-child(2){
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>hover class</h1>
+    <a href="" class="a1">link class unvisited</a>
+    <a href="" class="a2"> visited class</a>
+    <a href="" class="a3">active class when we click button</a>
+    <br>
+    <a href="#last">last paragraph</a>
+    <p id="first">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit vel illo earum ipsa voluptas repellendus nisi accusamus tempore harum molestias eum, odio unde quod mollitia nulla magnam, in aliquam. Ex!</p>
+    <br><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, aliquam. Exercitationem fugiat molestiae perspiciatis excepturi ab, ipsam eveniet distinctio quod sapiente dolorum voluptates sit nemo voluptate veritatis temporibus eligendi tenetur!</p><br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi laudantium, beatae perferendis eos quidem illo ipsam! Cupiditate, sunt dolores explicabo vero hic fuga animi blanditiis quae enim, obcaecati consectetur voluptas!</p><br>
+    <p id="last">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos suscipit officia voluptas labore beatae voluptatibus porro nesciunt. Eligendi quo ullam expedita cumque rerum excepturi, corporis fugiat ut rem, neque nostrum.</p>
+    <a href="#first">first paragraph</a>
+    <input type="text">
+    <input type="text" required>
+    <h2 class="fir">first h2</h2>
+    <h2 class="sec">sec h2</h2>
+    <h2 class="thi">third h2</h2>
+    <div>
+        <p>paragraph1</p>
+        <p>paragraph 2</p>
+        <p>paragraph 3</p>
+    </div>
+    <div>
+        <p>paragraph1</p>
+        <p>paragraph 2</p>
+        <p>paragraph 3</p>
+    </div>
+</body>
+</html>

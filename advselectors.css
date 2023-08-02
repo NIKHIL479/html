@@ -1,0 +1,19 @@
+/* *selector*/
+*{ color: blue;
+}
+/*descendent selector*/
+ul li{
+  color: red;
+}
+/*adjacent selector*/
+h1+h3{
+  color: black;
+}
+/*attribute selector*/
+h1[id='jh']{
+  color: orange;
+}
+/*nth-of-type() selector*/
+div:nth-of-type(2){
+  color: yellow;
+}

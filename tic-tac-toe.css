@@ -1,0 +1,20 @@
+h1{
+  text-align: center;
+}
+.vertical{
+  border-right: 2px red solid;
+}
+.horizontal{
+  border-top: 2px red solid;
+}
+td{
+  height: 100px;
+  width: 100px;
+  
+}
+table{
+  margin: auto;
+}
+td:hover{
+border: 2px green solid;
+}

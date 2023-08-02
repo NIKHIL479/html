@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    :root{
+   --h2color:yellow;
+    }/* to declare a variable in global scope we should put it in root 
+    pseudo class*/
+    h1{
+      --h1color: red;/*local scope*/
+      color:var(--h1color) ;/*variable should be in var func*/
+    }
+    h2{
+      background-color: var(--h2color,pink);/* if --h2ccolor is not there then pink is executed*/
+      
+    }
+  </style>
+</head>
+<body>
+  <h1>h1 tag</h1>
+  <h2>h2 tag</h2>
+  
+</body>
+</html>

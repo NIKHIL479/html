@@ -1,0 +1,12 @@
+body{
+  padding-top: 10px;
+
+}
+.container .jumbotron{
+  background: green;
+  color: white;
+}
+img{
+  height=100px;
+  width=100px;
+}

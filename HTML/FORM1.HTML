@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="form2.html">
+       name: <input type="text" name="name" required><br>
+       pass: <input type="password" name="password">
+       place: <input type="text" name="place" required maxlength="10" minlength="2">
+       <input type="text" value="readonly" readonly>
+       upload file: <input type="file">
+       number<input type="number" name="id" min="10" max="50">
+       gender: <input type="radio" name="gender" id="" value="male">
+       <input type="radio" name="gender" id="" value="female">
+       feedback: <textarea name="" id="" cols="30" rows="10" ></textarea>
+       <br>
+       languages: english: <input type="checkbox" name="language" value="english" checked>
+       telugu:<input type="checkbox" name="language" value="telugu">
+       <select name="subject" id="" >
+        <option value="java">java</option>
+        <option selected value="c">c</option>
+        <option value="python">python</option>
+        <option value="c#">c#</option>
+       </select>
+          <input type="button" value="disabled button" disabled>
+       <input type="submit" value="submit">
+       <input type="reset" name="" id="">
+    </form>
+</body>
+</html>

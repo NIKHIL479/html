@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div0{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="div0">
+    <input type="text" id="i">
+    <div id="div1">
+    <button class="b" >1</button>
+    <button class="b" >2</button>
+    <button class="b" >3</button>
+    <button class="b" >4</button>
+    <button class="b" >5</button>
+</div>
+<div id="div2">
+    <button class="b" >6</button>
+    <button class="b" >7</button>
+    <button class="b" >8</button>
+    <button class="b" >9</button>
+    <button class="b" >0</button>
+</div>
+<div id="div3">
+    <button class="b" >+</button>
+    <button class="b" >-</button>
+    <button class="b" >*</button>
+    <button class="b" >/</button>
+    <button class="b" >%</button>
+    <br>
+</div>
+<button class="r">result</button>
+</div>
+    <script>
+       var buttons=document.getElementsByClassName('b')
+       var input=document.getElementById('i');
+       var re=document.getElementsByClassName('r')[0]
+       for(var i=0;i<buttons.length;i++)
+       {
+        buttons[i].onclick=(e)=>{input.value+=e.target.textContent
+        }
+       }
+
+       re.onclick=(q)=>{
+        input.value=eval(input.value)
+       }
+       
+
+
+    </script>
+</body>
+</html>

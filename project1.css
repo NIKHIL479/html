@@ -1,0 +1,135 @@
+#header{
+  background: #e74c3c;
+  color: #fff;
+}
+.menu li a{
+  color: #fff;
+  text-decoration: none;
+  padding: 15px;
+  padding-bottom: 20px;
+}
+li{
+  display: inline-block;
+  margin-top: 9px;
+
+  list-style: none;
+}
+.menu li a:hover{
+  background: #c0392b;
+}
+#logo{
+  font-size: 2rem;
+  margin-top: 5px;
+}
+#banner{
+  background-image: url(https://images.unsplash.com/photo-1651002917997-4a137d44852b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIzfHhqUFI0aGxrQkdBfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.banner-title h1{
+  background: rgba(255, 255, 255, 0.8);
+  margin-top: 120px;
+  margin-bottom: 0;
+  display: inline-block;
+  padding: 10px;
+}
+.banner-title p{
+  background: #e74c3c;
+  color: white;
+  padding: 10px;
+  width: 80%;
+}
+.banner-title{
+  margin-left: 10px;
+}
+.service-box{
+  text-align: center;
+}
+.service-box i.fa{
+  color: #e74c3c;
+  font-size: 70px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.section{
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.section h2.section-head{
+  text-align: center;
+}
+.line{
+  text-align: center;
+  color: #e74c3c;
+}
+#testimonials{
+  background: url("https://images.unsplash.com/photo-1517765371796-5bd3a7d30a29?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGJsYWNrJTIwbW9iaWxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  position: relative;
+  color: white;
+}
+.section-head{
+  color: black;
+}
+
+.testimonial img{
+  border-radius: 50%;
+}
+.news-post img{
+  width: 100%;
+  margin-bottom: 10px;
+}
+.news-post h3{
+  font-size: 1.35rem;
+}
+.news-post h3 a{
+  color: #e74c3c;
+  text-decoration: none;
+}
+a.readmore{
+  color: #e74c3c;
+  text-decoration: none;
+}
+.post-date{
+  margin-bottom: 5px;
+}
+i.fa-calendar{
+  margin-right: 13px;
+}
+#footer-sider{
+  padding-top: 20px;
+  color: white;
+  background-color:  #34495e
+}
+.latest-news{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.latest-news a{
+  color: white;
+  text-decoration: none;
+}
+.footer-widget h4{
+  margin-bottom: 15px;
+}
+.footer-widget h1{
+  width: 30%;
+}
+#footer{
+  background: #2c3e50;
+  padding-top: 15px;
+  color: white;
+}
+.icons li{
+  list-style: none;
+  display: inline-block;
+  padding: 15px;
+}
+.icons li a{
+  color: white;
+  font-size: 20px;
+}

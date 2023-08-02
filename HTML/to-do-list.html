@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    
+.container{
+
+background-color: pink;
+
+display: inline-block;
+
+margin-left: 400px;
+}
+.item{
+
+  background-color: grey;
+
+display: flex;
+justify-content: space-around;
+}
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+<input type="text" class="inp">
+<button class="btn">add</button><br><br>
+<div class="add"></div>
+</div>
+
+<script>
+var input=document.getElementsByClassName('inp')[0]
+var but=document.getElementsByClassName('btn')[0]
+var diiv=document.getElementsByClassName('add')[0]
+but.onclick=f;
+function f(){
+  if(input.value.length==0)
+  {
+    alert("enter a text")
+  }
+  else{
+    diiv.innerHTML+=`
+    <div class='item'>
+      <h1>${input.value}</h1>
+      <button class="del">delete</button>
+      </div>`
+      var dele=document.querySelectorAll(".del");
+for( i=0;i<dele.length;i++)
+{
+  dele[i].onclick= function d(){
+  console.log(this)
+    console.log(this.parentElement.remove())
+};
+}
+ 
+  }
+  input.value=''
+}
+
+</script>
+  
+</body>
+</html>

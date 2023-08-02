@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div{
+      float: left;
+      margin: 20px;
+    }
+    .div1{
+      width: 200px;
+      height: 200px;
+      background-color: greenyellow;
+      margin-bottom: 20px;
+    }
+    .div2{
+      width: 200px;
+      height: 200px;
+      background-color: aquamarine;
+      transition: all 3s ease-in 2s;
+    }
+    .div2:hover{
+     
+      height: 400px;
+      width:300px ;
+    }
+    .div3{
+      width: 200px;
+      height: 200px;
+      background-color: aquamarine;
+      transition: height 3s ease-in 2s;
+      /* 3rd parameter is transition-timing-func values are: ease ease-in ease-out linear 4 th parameter is delay 2 nd parameter is transition time*/
+    }
+    .div3:hover{
+     
+     height: 400px;
+   
+   }
+  </style>
+</head>
+<body>
+  <div class="div1">
+    normal div
+  </div>
+<div class="div2">
+  transitioning div
+</div>  
+<div class="div3">
+  transitioning div
+</div>  
+</body>
+</html>

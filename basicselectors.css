@@ -1,0 +1,18 @@
+#roh{
+  color: red;
+border: pink 20px solid }
+img{
+  border-left: red 10px solid;
+  border-top: green 10px solid;
+  border-right: pink 10px solid;
+  border-bottom: blue 10px solid;
+}
+div{color: violet;
+}
+.he{
+  color: orange;
+  background: black;
+}
+h3{
+  color: yellow;
+}
